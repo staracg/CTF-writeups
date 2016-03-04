@@ -1,8 +1,7 @@
 # Pwnable.kr
 ### fd
 ./fd `python -c "print 0x1234+1"`
-LETMEWIN 
-
+`LETMEWIN`
 FLAG: mommy! I think I know what a file descriptor is!!
 ### collision
 gdb col
