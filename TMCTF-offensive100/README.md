@@ -21,7 +21,7 @@ if (pass.substring(0, 6) != "TMCTF{" || pass.substr(pass.length - 1) != "}") {
         return;
     };
 ```
-分析這段code後，知道FLAG括號內有17個字。
+分析這段code後，FLAG的長度會是TMCTF{xxxxxxxxxxxxxxxxx}。
 
 ```
     for (var i = 0; i < pwbody.length;) {
