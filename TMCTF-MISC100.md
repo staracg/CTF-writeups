@@ -39,9 +39,8 @@ src 1.1.1.11 dst 1.1.1.10
 ```
 Preferences - Protocols - ESP
 ```
-把出現的四個選項都打勾
-點ESP SAs edit把上面得到的AES、SHA1、spi填進去
-由上面知道加密法是AES-CBC，驗證方法是HMAC-SHA1
+把出現的四個選項都打勾，點ESP SAs edit把上面得到的AES、SHA1、spi填進去，
+由上面知道加密法是AES-CBC，驗證方法是HMAC-SHA1。
 - reference:https://ask.wireshark.org/questions/12019/how-can-i-decrypt-ikev1-andor-esp-packets
 
 ![Alt Text](http://imgur.com/H9HnUzB.png)
