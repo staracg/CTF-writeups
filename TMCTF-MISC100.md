@@ -46,7 +46,7 @@ Preferences - Protocols - ESP
 ![Alt Text](http://imgur.com/H9HnUzB.png)
 
 
-ESP封包解密後，下「tcp contains flag」篩選一下，看有沒有相關訊息
+ESP封包解密後，下「tcp contains flag」篩選一下，看有沒有相關訊息，
 發現他們在HTTP protocol中傳輸了一張flag.png
 ![Alt Tex](http://imgur.com/bNaMIl0.png)
 
@@ -58,5 +58,4 @@ File - Export Objects - HTTP
 
 ![Alt Text](http://imgur.com/yYqxjH1.png)
 
-
-得到FLAG。
+-得到FLAG。
