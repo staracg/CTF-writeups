@@ -5,7 +5,7 @@ ESP協議（Encapsulated SecurityPayload，使用較廣）：可以同時提供�
 reference:https://read01.com/o0kDJ.html
 ```
 
-之後跟進TCP看一下傳輸了什麼
+之後跟進TCP，看一下還有什麼訊息可以得知
 ```
 Analyze - follow - TCP Stream
 ```
