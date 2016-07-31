@@ -1,8 +1,8 @@
 分析封包題目，丟進wireshark看，看到有ESP協議的封包
+- reference:https://read01.com/o0kDJ.html
+
 ```
 ESP協議（Encapsulated SecurityPayload，使用較廣）：可以同時提供數據完整性確認、數據加密、防重放等安全特性；ESP通常使用DES、3DES、AES等加密算法實現數據加密，使用MD5或SHA1來實現數據完整性。
-
-- reference:https://read01.com/o0kDJ.html
 ```
 
 之後跟進TCP，看一下還有什麼訊息可以得知
