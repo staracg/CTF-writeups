@@ -9,7 +9,7 @@ reference:https://read01.com/o0kDJ.html
 ```
 Analyze - follow - TCP Stream
 ```
-![Alt Text](http://imgur.com/XzmWnvN.png)
+![Alt Text](http://imgur.com/36WPqSS.png)
 
 看著看著，看到了這段後，就能開始解開ESP啦
 ```
@@ -39,13 +39,13 @@ src 1.1.1.11 dst 1.1.1.10
 ```
 Preferences - Protocols - ESP
 ```
+把出現的四個選項都打勾
+點ESP SAs edit把上面得到的AES、SHA1、spi填進去
+由上面知道加密法是AES-CBC，驗證方法是HMAC-SHA1
 - reference:https://ask.wireshark.org/questions/12019/how-can-i-decrypt-ikev1-andor-esp-packets
 
-把出現的四個選項都打勾
-
-點ESP SAs edit把上面得到的AES、SHA1、spi填進去
-由上面知道加密法是AES-CBC，驗證方法是HMAC-SHA1、
 ![Alt Text](http://imgur.com/H9HnUzB.png)
+
 
 ESP封包解密後，下「tcp contains flag」篩選一下，看有沒有相關訊息
 發現他們在HTTP protocol中傳輸了一張flag.png
@@ -58,6 +58,3 @@ File - Export Objects - HTTP
 ![Alt Text](http://imgur.com/V5MT1Zm.png)
 ![Alt Text](http://imgur.com/yYqxjH1.png)
 得到FLAG。
-
-
-
