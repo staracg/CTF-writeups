@@ -48,12 +48,15 @@ Preferences - Protocols - ESP
 
 ESP封包解密後，下「tcp contains flag」篩選一下，看有沒有相關訊息
 發現他們在HTTP protocol中傳輸了一張flag.png
-![Alt Tex](http://imgur.com/bNaMIl0)
+![Alt Tex](http://imgur.com/bNaMIl0.png)
 
 最後用wireshark把這張圖片export出來
 ```
 File - Export Objects - HTTP
 ```
 ![Alt Text](http://imgur.com/V5MT1Zm.png)
+
 ![Alt Text](http://imgur.com/yYqxjH1.png)
+
+
 得到FLAG。
